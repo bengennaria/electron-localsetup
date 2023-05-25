@@ -1,20 +1,20 @@
 {
-  "name": "@sidneys/electron-localsetup",
+  "name": "@bengennaria/electron-localsetup",
   "version": "1.136.0",
   "description": "Install and launch Electron app packages using the default OS program folder – '/Applications' on macOS, 'C:\\Program Files' on Windows and '/usr/local' on Linux",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/sidneys/electron-localsetup",
+  "homepage": "https://github.com/bengennaria/electron-localsetup",
   "author": {
-    "name": "sidneys",
-    "email": "sidneys.github.io@outlook.com",
-    "url": "https://bitbucket.org/sidneys"
+    "name": "bengennaria",
+    "email": "ben.gennaria@gmail.com",
+    "url": "https://github.com/bengennaria"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/sidneys/electron-localsetup.git"
+    "url": "https://github.com/bengennaria/electron-localsetup.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/sidneys/electron-localsetup/issues"
+    "url": "https://github.com/bengennaria/electron-localsetup/issues"
   },
   "deprecated": false,
   "engines": {
@@ -31,9 +31,9 @@
     "tools"
   ],
   "dependencies": {
-    "@sidneys/is-env": "^1.143.0",
-    "@sidneys/logger": "^1.151.0",
-    "@sidneys/platform-tools": "^1.150.0",
+    "@bengennaria/is-env": "git+https://bengennaria@github.com/bengennaria/is-env.git",
+    "@bengennaria/logger": "git+https://bengennaria@github.com/bengennaria/logger.git",
+    "@bengennaria/platform-tools": "git+https://bengennaria@github.com/bengennaria/platform-tools.git",
     "app-root-path": "^3.0.0",
     "fkill": "^7.1.0",
     "fs-extra": "^9.0.1",

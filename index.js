@@ -7,7 +7,7 @@
  * External
  * @constant
  */
-const logger = require('@sidneys/logger')({ timestamp: false })
+const logger = require('@bengennaria/logger')({ timestamp: false })
 const minimist = require('minimist')
 
 /**
