@@ -21,7 +21,7 @@ const runBuild = require('./lib/run-build')
 
 /**
  * Main
- * @namespace process.env.npm_config_argv.original
+ * @namespace process.env.original
  */
 if (require.main === module) {
     /**
@@ -30,9 +30,9 @@ if (require.main === module) {
     let argv
 
     try {
-        argv = minimist(JSON.parse(process.env.npm_config_argv).original, {
+        argv = minimist(JSON.parse(process.env).original, {
             'boolean': [
-                'build'
+                'npm_config_build'
             ],
             'unknown': () => { return false }
         })
@@ -45,7 +45,7 @@ if (require.main === module) {
      */
 
     // --build
-    let argvBuild = argv['build']
+    let argvBuild = argv['npm_config_build']
 
     // DEBUG
     logger.debug('argv', argv)
