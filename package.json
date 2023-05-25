@@ -1,0 +1,53 @@
+{
+  "name": "@sidneys/electron-localsetup",
+  "version": "1.136.0",
+  "description": "Install and launch Electron app packages using the default OS program folder – '/Applications' on macOS, 'C:\\Program Files' on Windows and '/usr/local' on Linux",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/sidneys/electron-localsetup",
+  "author": {
+    "name": "sidneys",
+    "email": "sidneys.github.io@outlook.com",
+    "url": "https://bitbucket.org/sidneys"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/sidneys/electron-localsetup.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/sidneys/electron-localsetup/issues"
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "os": [
+    "darwin",
+    "win32",
+    "linux"
+  ],
+  "keywords": [
+    "development",
+    "tools"
+  ],
+  "dependencies": {
+    "@sidneys/is-env": "^1.143.0",
+    "@sidneys/logger": "^1.151.0",
+    "@sidneys/platform-tools": "^1.150.0",
+    "app-root-path": "^3.0.0",
+    "fkill": "^7.1.0",
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.2",
+    "jsonfile": "latest",
+    "lodash": "latest",
+    "minimist": "^1.2.5",
+    "try-require": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  },
+  "bin": {
+    "electron-localsetup": "index.js"
+  },
+  "main": "./index.js"
+}
