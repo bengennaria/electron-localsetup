@@ -8,7 +8,6 @@
  * @constant
  */
 const logger = require('@bengennaria/logger')({ timestamp: false })
-const minimist = require('minimist')
 
 /**
  * Modules
@@ -21,39 +20,16 @@ const runBuild = require('./lib/run-build')
 
 /**
  * Main
- * @namespace process.env.original
+ * @namespace process.env
  */
 if (require.main === module) {
-    /**
-     * Parse Arguments
-     */
-    let argv
-
-    try {
-        argv = minimist(JSON.parse(process.env).original, {
-            'boolean': [
-                'npm_config_build'
-            ],
-            'unknown': () => { return false }
-        })
-    } catch (error) {
-        logger.error('could not parse arguments', error)
-    }
-
-    /**
-     * Resolve Arguments
-     */
-
-    // --build
-    let argvBuild = argv['npm_config_build']
-
     // DEBUG
-    logger.debug('argv', argv)
+    logger.debug('npm_config_build', process.env.npm_config_build)
 
     /**
      * Build externally
      */
-    if (argvBuild) {
+    if (process.env.npm_config_build) {
         runBuild()
     }
 
